@@ -72,7 +72,7 @@ body {
 }
 
 .score__label {
-  font-size: 1.05cqw;
+  font-size: 1.8cqw;
   white-space: nowrap;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -80,9 +80,7 @@ body {
   padding: 0.5em 0.8em;
   background: color-mix(in srgb, var(--d) 75%, transparent);
   border: 0.18em solid var(--c);
-  opacity: 0;
-  transform: translateY(0.6em);
-  transition: opacity 0.2s, transform 0.25s;
+  transition: transform 0.25s, box-shadow 0.25s;
 }
 
 /* Hover efekt */
@@ -99,8 +97,8 @@ body {
 }
 
 .score:hover .score__label {
-  opacity: 1;
-  transform: translateY(0);
+  transform: translateY(-0.3em);
+  box-shadow: 0 0 0.8em var(--c);
 }
 
 /* "Bump" když se skóre změní */
